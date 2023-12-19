@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #Container {
+                width: 500px;
+                box-shadow: 0 0 10px black;
+                margin: 100px auto;
+                text-align: center;
+                padding: 50px;
+            }
+        </style>
+        <script src="index.js"></script>
+
+    </head>
+    <body>
+        <div id="Container">
+            <h2 id="title">Hello JavaScript, How are you?</h2>
+            <select id="colordropdown" onchange="changeColorandSize()">
+                <option value="black">select options</option>
+                <option value="yellow">yellow</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="orange">Orange</option>
+            </select>
+            <select id="fontsize" onchange="changeColorandSize()">
+                <option value="25px">Font Size</option>
+                <option value="10px">10</option>
+                <option value="20px">20</option>
+                <option value="30px">30</option>
+                <option value="40px">40</option>
+            </select>
+        </div>
+    </body>
+</html>
