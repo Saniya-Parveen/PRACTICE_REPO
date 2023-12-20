@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                padding: 0px;
+                font-family:'poppins', sans-serif
+            }
+            #Navbar {
+                background-color: darkred;
+                color: white;
+                overflow: hidden;
+                padding: 20px 40px;
+                font-size: 30px;
+                font-weight: bold;
+                
+                
+
+            }
+            #Navbar a {
+                color: white;
+                text-decoration: none;
+                margin-right: 30px; 
+                font-size: 15px;
+                float: right;
+                
+            }   
+        </style>
+
+    </head>
+    <body>
+        <nav id="Navbar">Home Page</nav>
+        <script>
+            function createNavBar() {
+                var body = document.body;
+                var navRef = document.getElementById('Navbar');
+                
+                var link = document.createElement('a');
+                link.href = 'contact.html';
+                link.innerText = 'CONTACT';
+                navRef.appendChild(link);
+
+                var link = document.createElement('a');
+                link.href = 'services.html';
+                link.innerText = 'SERVICES';
+                navRef.appendChild(link);
+
+                var link = document.createElement('a');
+                link.href = 'about.html';
+                link.innerText = 'ABOUT';
+                navRef.appendChild(link);
+
+                var link = document.createElement('a');
+                link.href = 'home.html';
+                link.innerText = 'HOME';
+                navRef.appendChild(link);
+
+            }
+            
+            createNavBar();
+        </script>
+    </body>
+</html>

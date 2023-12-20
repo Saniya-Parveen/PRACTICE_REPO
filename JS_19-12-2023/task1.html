@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function createPelement() {
+                var pRef = document.createElement('p');
+                pRef.innerText = "My name is Saniya";
+
+                var divRef = document.querySelector('div');
+                divRef.appendChild(pRef);
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <h2>create a p element</h2>
+            <button onclick="createPelement()">p element</button>
+
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+            function submitList(){
+                var listRef = document.getElementById("listNames");
+                var todoRef = document.getElementById("todolist");
+                var task = listRef.value.trim();
+                if(task !== ""){
+                    var listItem = document.createElement('li');
+                    listItem.textContent = task;
+                    todoRef.appendChild(listItem);
+                    todoRef.value = "";
+
+                }
+                
+
+            }  
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Todo List</h1>
+            <input id="listNames" type="text" name="todo" placeholder="Enter here">
+            <button onclick="submitList()">SUBMIT</button>
+            <ul id ="todolist"></ul>
+        </div>
+    </body>
+</html>
